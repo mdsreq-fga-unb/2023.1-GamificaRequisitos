@@ -16,10 +16,15 @@ O caso de uso “Criar Turmas” tem como objetivo dar ao professor da matéria 
 
 ### 1.3 - Fluxo Básico(FB)
 1.3.1- O professor acessa o Software.
+
 1.3.2- O sistema exibe a tela de criação de turmas, onde o professor pode exportar um arquivo .xls para criar as turmas.
+
 1.3.3- O professor pode ajustar as turmas, adicionando ou removendo alunos conforme necessário.
+
 1.3.4- O sistema registra as alterações feitas pelo professor e atualiza as informações da turma.
+
 1.3.5- O professor finaliza o processo de criação de turmas e salva as alterações realizadas.
+
 1.3.6- O sistema armazena as turmas criadas e os dados dos alunos alocados para uso posterior.
 
 ### 1.4 - Fluxo Alternativo(FA) 
