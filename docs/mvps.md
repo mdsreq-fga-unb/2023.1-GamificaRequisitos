@@ -29,7 +29,7 @@ Após atribuirmos as pontuações em cada dimensão, calculamos a pontuação to
 | 2.1.1 - Como aluno, eu quero jogar jogos durante a fase de seleção de equipes                                                                           | A                | M                  | A           | 0  | 8  | 3 | 0 | 0  | 11    |
 | 1.2.2 - Como professor, eu quero alterar as informações de uma atividade existente                                                                      | B                | MA                 | M           | 5  | 0  | 3 | 2 | 0  | 10    |
 | 2.3.1 - Como aluno, eu quero realizar um cadastro para acessar a plataforma                                                                             | M                | A                  | M           | 0  | 4  | 6 | 0 | 0  | 10    |
-| 1.1.3 - Como professor, eu quero arquivar uma turma para possuir um histórico das turmas                                                                | A                | B                  | M           | 0  | 4  | 3 | 2 | 0  | 9     |
+| ~~1.1.3 - Como professor, eu quero arquivar uma turma para possuir um histórico das turmas~~                                                                 | A                | B                  | M           | 0  | 4  | 3 | 2 | 0  | 9     |
 | 1.1.4 - Como professor, eu quero adicionar monitores a uma turma para me auxiliarem                                                                     | M                | M                  | M           | 0  | 0  | 9 | 0 | 0  | 9     |
 | 1.1.2 - Como professor, eu quero alterar o nome da turma para que eu possa administra-las                                                               | MB               | MA                 | B           | 5  | 0  | 0 | 2 | 1  | 8     |
 | 1.1.7 - Como professor, eu quero realizar login para acessar a minha conta de usuário administrador                                                     | B                | M                  | M           | 0  | 0  | 6 | 2 | 0  | 8     |
@@ -55,7 +55,7 @@ Além da tabela supracitada, analisamos as relações entre as histórias no que
 
 ## MVP 2
 
-1.1.3 - Como professor, eu quero arquivar uma turma para possuir um histórico das turmas
+~~1.1.3 - Como professor, eu quero arquivar uma turma para possuir um histórico das turmas~~ 
 
 1.1.6 - Como professor, eu quero exportar uma arquivo .xls com matrícula, nome, email, equipe e o saldo de PAXs de todos os alunos da turma selecionada
 
