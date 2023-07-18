@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.utils.translation import gettext_lazy as _
 from django.contrib.admin import RelatedFieldListFilter
 from django.db.models import Q
+from django import forms
 from .models import Turma, Atividade, Equipe, Aluno, RealizacaoAtividade
 
 @admin.register(Turma)
@@ -48,12 +49,37 @@ class EquipeTurmaFilter(RelatedFieldListFilter):
             return field.get_choices(
                 include_blank=False,
             )
-@admin.register(RealizacaoAtividade)
+        
+class RealizacaoAtividadeForm(forms.ModelForm):
+    equipe = forms.ModelChoiceField(queryset=None)
+
+    def __init__(self, *args, **kwargs):
+        atividade_id = kwargs.pop('atividade_id', None)
+        super().__init__(*args, **kwargs)
+        if atividade_id:
+            atividade = Atividade.objects.get(id=atividade_id)
+            self.fields['equipe'].queryset = atividade.turma.equipe_set.all()
+
+    class Meta:
+        model = RealizacaoAtividade
+        fields = '__all__'
+
 class RealizacaoAtividadeAdmin(admin.ModelAdmin):
+    form = RealizacaoAtividadeForm
     list_display = ('atividade', 'equipe', 'realizada_com_sucesso')
-    list_filter = (
-        ('atividade__turma', EquipeTurmaFilter),
-        'equipe',
-        'realizada_com_sucesso',
-    )
-    
+    list_filter = ('atividade__turma', 'equipe', 'realizada_com_sucesso')
+    search_fields = ('atividade__nome', 'equipe__nome')
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.request = request
+        return form
+
+    def response_add(self, request, obj, post_url_continue=None):
+        atividade_id = request.GET.get('atividade_id')
+        if atividade_id:
+            return self.response_post_save_change(request, obj)
+
+        return super().response_add(request, obj, post_url_continue)
+
+admin.site.register(RealizacaoAtividade, RealizacaoAtividadeAdmin)
