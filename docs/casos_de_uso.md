@@ -243,4 +243,4 @@ O caso de uso “Criar Turmas” tem como objetivo dar ao professor da matéria 
 
 |  Data | Versão | Descrição | Autor(es) |
 | :--------: | :----: | :---------------------------------: | :---------: |
-| 13/07/2023 |  1.0   | Criação dos Casos de Uso | Felipe Nunes, Palo Borba e Vinícius |
+| 13/07/2023 |  1.0   | Criação dos Casos de Uso | Felipe Nunes |
