@@ -12,6 +12,8 @@ nav:
   - Canvas PBB: 
     - US's: canvas_pbb.md
     - BDD's: bdd.md
+  - User Story Mapping: user_story_mapping.md
+  - Casos de Uso: casos_de_uso.md
   - Apresentações: apresentacoes.md
   - Entregas:
     - Pit OpenUp: entrega_pitch_openUp.md
