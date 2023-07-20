@@ -1,0 +1,1318 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mdsreq-fga-unb.github.io/2023.1-GamificaRequisitos/casos_de_uso/">
+      
+      
+        <link rel="prev" href="../user_story_mapping/">
+      
+      
+        <link rel="next" href="../apresentacoes/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>Casos de Uso - Gamifica Requisitos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#casos-de-uso" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Gamifica Requisitos" class="md-header__button md-logo" aria-label="Gamifica Requisitos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 6H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-10 7H8v3H6v-3H3v-2h3V8h2v3h3m4.5 4a1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5 1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5m4-3a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 19.5 9a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Gamifica Requisitos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Casos de Uso
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Modo noturno"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Modo noturno" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Modo claro" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Gamifica Requisitos" class="md-nav__button md-logo" aria-label="Gamifica Requisitos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 6H3a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-10 7H8v3H6v-3H3v-2h3V8h2v3h3m4.5 4a1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5 1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5m4-3a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 19.5 9a1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5Z"/></svg>
+
+    </a>
+    Gamifica Requisitos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Início
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao_produto/" class="md-nav__link">
+        Visão do Produto
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visao_projeto/" class="md-nav__link">
+        Visão do Projeto
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../processo_software/" class="md-nav__link">
+        Processo de Desenvolvimento
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog/" class="md-nav__link">
+        Product Backlog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvps/" class="md-nav__link">
+        MVPs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backlog_estrutura_safe/" class="md-nav__link">
+        Backlog estrutura SAFe
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Canvas PBB
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Canvas PBB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../canvas_pbb/" class="md-nav__link">
+        US's
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bdd/" class="md-nav__link">
+        BDD's
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_story_mapping/" class="md-nav__link">
+        User Story Mapping
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Casos de Uso
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Casos de Uso
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-uml" class="md-nav__link">
+    Diagrama UML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especificacao-de-caso-de-uso" class="md-nav__link">
+    Especificação de Caso de Uso:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-criar-turmas" class="md-nav__link">
+    1 - Criar Turmas
+  </a>
+  
+    <nav class="md-nav" aria-label="1 - Criar Turmas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-breve-descricao" class="md-nav__link">
+    1.1 - Breve descrição
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-atores" class="md-nav__link">
+    1.2 - Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-fluxo-basicofb" class="md-nav__link">
+    1.3 - Fluxo Básico(FB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-fluxo-alternativofa" class="md-nav__link">
+    1.4 - Fluxo Alternativo(FA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-fluxo-de-excecaofe" class="md-nav__link">
+    1.5 - Fluxo de Exceção(FE)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-condicoes-previas" class="md-nav__link">
+    1.6 - Condições Prévias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-pos-condicoes" class="md-nav__link">
+    1.7 - Pós-condições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-ponto-de-extensao" class="md-nav__link">
+    1.8 - Ponto de Extensão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-requisitos-especiais" class="md-nav__link">
+    1.9 - Requisitos Especiais
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-criar-equipes" class="md-nav__link">
+    2 - Criar Equipes
+  </a>
+  
+    <nav class="md-nav" aria-label="2 - Criar Equipes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-breve-descricao" class="md-nav__link">
+    2.1 - Breve descrição
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-atores" class="md-nav__link">
+    2.2 - Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-fluxo-basicofb" class="md-nav__link">
+    2.3 - Fluxo Básico(FB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-fluxo-alternativofa" class="md-nav__link">
+    2.4 - Fluxo Alternativo(FA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-fluxo-de-excecaofe" class="md-nav__link">
+    2.5 - Fluxo de Exceção(FE)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-condicoes-previas" class="md-nav__link">
+    2.6 - Condições Prévias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-pos-condicoes" class="md-nav__link">
+    2.7 - Pós-condições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-ponto-de-extensao" class="md-nav__link">
+    2.8 - Ponto de Extensão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-requisitos-especiais" class="md-nav__link">
+    2.9 - Requisitos Especiais
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-criar-atividades" class="md-nav__link">
+    3 - Criar Atividades
+  </a>
+  
+    <nav class="md-nav" aria-label="3 - Criar Atividades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-breve-descricao" class="md-nav__link">
+    3.1 - Breve descrição
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-atores" class="md-nav__link">
+    3.2 - Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-fluxo-basicofb" class="md-nav__link">
+    3.3 - Fluxo Básico(FB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-fluxo-alternativofa" class="md-nav__link">
+    3.4 - Fluxo Alternativo(FA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-fluxo-de-excecaofe" class="md-nav__link">
+    3.5 - Fluxo de Exceção(FE)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-condicoes-previas" class="md-nav__link">
+    3.6 - Condições Prévias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-pos-condicoes" class="md-nav__link">
+    3.7 - Pós-condições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-ponto-de-extensao" class="md-nav__link">
+    3.8 - Ponto de Extensão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-requisitos-especiais" class="md-nav__link">
+    3.9 - Requisitos Especiais
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisao" class="md-nav__link">
+    Histórico de revisão
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apresentacoes/" class="md-nav__link">
+        Apresentações
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          Entregas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Entregas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega_pitch_openUp/" class="md-nav__link">
+        Pit OpenUp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega_visao_geral_prod/" class="md-nav__link">
+        Visão Geral do Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entrega_planej_proj/" class="md-nav__link">
+        Planejamento do Projeto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mural/" class="md-nav__link">
+        Mural
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licoes_aprendidas/" class="md-nav__link">
+        Lições Aprendidas
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bibliografia/" class="md-nav__link">
+        Bibliografia
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diagrama-uml" class="md-nav__link">
+    Diagrama UML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#especificacao-de-caso-de-uso" class="md-nav__link">
+    Especificação de Caso de Uso:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-criar-turmas" class="md-nav__link">
+    1 - Criar Turmas
+  </a>
+  
+    <nav class="md-nav" aria-label="1 - Criar Turmas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-breve-descricao" class="md-nav__link">
+    1.1 - Breve descrição
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-atores" class="md-nav__link">
+    1.2 - Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-fluxo-basicofb" class="md-nav__link">
+    1.3 - Fluxo Básico(FB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-fluxo-alternativofa" class="md-nav__link">
+    1.4 - Fluxo Alternativo(FA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-fluxo-de-excecaofe" class="md-nav__link">
+    1.5 - Fluxo de Exceção(FE)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-condicoes-previas" class="md-nav__link">
+    1.6 - Condições Prévias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-pos-condicoes" class="md-nav__link">
+    1.7 - Pós-condições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-ponto-de-extensao" class="md-nav__link">
+    1.8 - Ponto de Extensão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-requisitos-especiais" class="md-nav__link">
+    1.9 - Requisitos Especiais
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-criar-equipes" class="md-nav__link">
+    2 - Criar Equipes
+  </a>
+  
+    <nav class="md-nav" aria-label="2 - Criar Equipes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-breve-descricao" class="md-nav__link">
+    2.1 - Breve descrição
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-atores" class="md-nav__link">
+    2.2 - Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-fluxo-basicofb" class="md-nav__link">
+    2.3 - Fluxo Básico(FB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-fluxo-alternativofa" class="md-nav__link">
+    2.4 - Fluxo Alternativo(FA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-fluxo-de-excecaofe" class="md-nav__link">
+    2.5 - Fluxo de Exceção(FE)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-condicoes-previas" class="md-nav__link">
+    2.6 - Condições Prévias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-pos-condicoes" class="md-nav__link">
+    2.7 - Pós-condições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-ponto-de-extensao" class="md-nav__link">
+    2.8 - Ponto de Extensão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-requisitos-especiais" class="md-nav__link">
+    2.9 - Requisitos Especiais
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-criar-atividades" class="md-nav__link">
+    3 - Criar Atividades
+  </a>
+  
+    <nav class="md-nav" aria-label="3 - Criar Atividades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-breve-descricao" class="md-nav__link">
+    3.1 - Breve descrição
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-atores" class="md-nav__link">
+    3.2 - Atores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-fluxo-basicofb" class="md-nav__link">
+    3.3 - Fluxo Básico(FB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-fluxo-alternativofa" class="md-nav__link">
+    3.4 - Fluxo Alternativo(FA)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-fluxo-de-excecaofe" class="md-nav__link">
+    3.5 - Fluxo de Exceção(FE)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-condicoes-previas" class="md-nav__link">
+    3.6 - Condições Prévias
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-pos-condicoes" class="md-nav__link">
+    3.7 - Pós-condições
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-ponto-de-extensao" class="md-nav__link">
+    3.8 - Ponto de Extensão
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-requisitos-especiais" class="md-nav__link">
+    3.9 - Requisitos Especiais
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisao" class="md-nav__link">
+    Histórico de revisão
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="casos-de-uso">Casos de Uso</h1>
+<h2 id="diagrama-uml">Diagrama UML</h2>
+<p><img alt="uml" src="../assets/images/uml.png" /></p>
+<h2 id="especificacao-de-caso-de-uso">Especificação de Caso de Uso:</h2>
+<h2 id="1-criar-turmas">1 - Criar Turmas</h2>
+<h3 id="11-breve-descricao">1.1 - Breve descrição</h3>
+<p>O caso de uso “Criar Turmas” tem como objetivo dar ao professor da matéria de Requisitos de Software a capacidade de criar turmas e colocar informações dos alunos cadastrados para posteriormente a criação de equipes e organização dos dados relacionados a essa turma durante a matéria.</p>
+<h3 id="12-atores">1.2 - Atores</h3>
+<p>1.2.1 - O professor deseja criar turmas.</p>
+<h3 id="13-fluxo-basicofb">1.3 - Fluxo Básico(FB)</h3>
+<p>1.3.1- O professor acessa o Software.</p>
+<p>1.3.2- O sistema exibe a tela de criação de turmas, onde o professor pode exportar um arquivo .xls para criar as turmas.</p>
+<p>1.3.3- O professor pode ajustar as turmas, adicionando ou removendo alunos conforme necessário.</p>
+<p>1.3.4- O sistema registra as alterações feitas pelo professor e atualiza as informações da turma.</p>
+<p>1.3.5- O professor finaliza o processo de criação de turmas e salva as alterações realizadas.</p>
+<p>1.3.6- O sistema armazena as turmas criadas e os dados dos alunos alocados para uso posterior.</p>
+<h3 id="14-fluxo-alternativofa">1.4 - Fluxo Alternativo(FA)</h3>
+<p>1.4.1- O professor acessa o software.</p>
+<p>1.4.2- O sistema exibe a tela de criação de turmas, onde o professor pode exportar um arquivo .xls para criar as turmas.</p>
+<p>1.4.3- O professor decide importar um arquivo .xls contendo as informações dos alunos para criar as turmas.</p>
+<p>1.4.4- O sistema processa o arquivo .xls e cria as turmas com base nas informações fornecidas.</p>
+<p>1.4.5- O sistema exibe as turmas criadas na tela.</p>
+<p>1.4.6- O professor percebe que é necessário ajustar as turmas.</p>
+<p>1.4.7- O professor seleciona a opção de editar turmas ou informações dos alunos.</p>
+<p>1.4.8- O sistema exibe as turmas atuais e fornece opções de edição.</p>
+<p>1.4.9- O professor pode adicionar novos alunos às turmas, removê-los ou fazer outras modificações conforme necessário.</p>
+<p>1.4.10- O sistema registra as alterações feitas pelo professor e atualiza as informações da turma.</p>
+<p>1.4.11- O professor finaliza o processo de criação de turmas e salva as alterações realizadas.</p>
+<p>1.4.12- O sistema armazena as turmas criadas e os dados dos alunos alocados para uso posterior.</p>
+<h3 id="15-fluxo-de-excecaofe">1.5 - Fluxo de Exceção(FE)</h3>
+<p>Não possui.</p>
+<h3 id="16-condicoes-previas">1.6 - Condições Prévias</h3>
+<p>1.6.1 - Professor possuir o login autenticado como administrador.</p>
+<h3 id="17-pos-condicoes">1.7 - Pós-condições</h3>
+<p>1.7.1- O sistema possuir um banco de dados funcional.</p>
+<h3 id="18-ponto-de-extensao">1.8 - Ponto de Extensão</h3>
+<p>1.8.1- Excluir alunos cadastrados.</p>
+<p>1.8.2- Notificar os alunos matriculados.</p>
+<h3 id="19-requisitos-especiais">1.9 - Requisitos Especiais</h3>
+<p>1.9.1- Requisitos de usabilidade.</p>
+<p>1.9.2- Requisitos de segurança.</p>
+<p>1.9.3- Requisitos de flexibilidade.</p>
+<h2 id="2-criar-equipes">2 - Criar Equipes</h2>
+<h3 id="21-breve-descricao">2.1 - Breve descrição</h3>
+<p>A feature proposta para o software é um gerador de equipes aleatórias com a finalidade de facilitar a formação de grupos de alunos e jogar um jogo para ampliar a dinâmica. Essa funcionalidade visa otimizar o processo de criação de equipes, de maneira justa e aleatória.</p>
+<h3 id="22-atores">2.2 - Atores</h3>
+<p>2.2.1 - O professor deseja criar equipes.</p>
+<h3 id="23-fluxo-basicofb">2.3 - Fluxo Básico(FB)</h3>
+<p>2.3.1- O professor inicia o software e seleciona a opção de criar equipes.</p>
+<p>2.3.2- O professor decide quantas equipes serão formadas.</p>
+<p>2.3.3- As equipes são formadas aleatoriamente.</p>
+<p>2.3.4- O software exibe as equipes geradas na tela, destacando os nomes dos alunos em cada equipe.</p>
+<p>2.3.5- Os alunos jogam um jogo.</p>
+<p>2.3.6- A partir dos resultados são propostas modificações nas equipes.</p>
+<p>2.3.7- O professor pode analisar as modificações propostas e editar caso necessário.</p>
+<p>2.3.8- O caso de uso é concluído, e o usuário pode sair do software ou realizar outras ações disponíveis.</p>
+<h3 id="24-fluxo-alternativofa">2.4 - Fluxo Alternativo(FA)</h3>
+<p>2.4.1- Após os resultados do jogo, o professor analisa se precisa de modificações nas equipes com base nos resultados formados.</p>
+<p>2.4.2- O professor faz as modificações necessárias.</p>
+<p>2.4.3- O professor realiza as edições necessárias nas equipes, considerando o desempenho dos alunos e buscando um equilíbrio adequado entre elas.</p>
+<p>2.4.4- O professor atualiza as equipes no software de acordo com as alterações feitas.</p>
+<p>2.4.5- O fluxo normal continua a partir do passo em que o caso de uso é concluído, permitindo ao professor sair do software ou realizar outras ações disponíveis.</p>
+<h3 id="25-fluxo-de-excecaofe">2.5 - Fluxo de Exceção(FE)</h3>
+<p>2.5.1- O professor inicia o software e seleciona a opção de criar equipes.</p>
+<p>2.5.2- O professor decide quantas equipes serão formadas.</p>
+<p>2.5.3- As equipes são formadas aleatoriamente.</p>
+<p>2.5.4- A partir dos resultados, percebe-se que os grupos não foram formados corretamente.</p>
+<p>2.5.5- O professor identifica o problema e decide corrigir os grupos.</p>
+<p>2.5.6- O professor seleciona a opção de editar equipes.</p>
+<p>2.5.7- O software exibe as equipes atuais e fornece opções de modificação.</p>
+<p>2.5.8- O professor realiza as alterações necessárias, como mover alunos entre equipes, excluir equipes ou adicionar novas equipes.</p>
+<p>2.5.9- O professor confirma as alterações.</p>
+<p>2.5.10- O software exibe as equipes atualizadas na tela, destacando os nomes dos alunos em cada equipe.</p>
+<p>2.5.11- O caso de uso é concluído, e o usuário pode sair do software ou realizar outras ações disponíveis.</p>
+<h3 id="26-condicoes-previas">2.6 - Condições Prévias</h3>
+<p>2.6.1 - Professor possuir o login autenticado como administrador.</p>
+<p>2.6.2 - O software é capaz de gerar as equipes aleatoriamente com base nos dados dos arquivos .xls.</p>
+<h3 id="27-pos-condicoes">2.7 - Pós-condições</h3>
+<p>2.7.1- As equipes foram formadas e estão prontas para serem exibidas.</p>
+<p>2.7.2- O professor está habilitado à edição das equipes caso necessário.</p>
+<h3 id="28-ponto-de-extensao">2.8 - Ponto de Extensão</h3>
+<p>2.8.1-Possibilidade de editar equipes a qualquer momento.</p>
+<h3 id="29-requisitos-especiais">2.9 - Requisitos Especiais</h3>
+<p>2.9.1- Requisitos de usabilidade.</p>
+<p>2.9.2- Requisitos de segurança.</p>
+<p>2.9.3- Requisitos de confiabilidade.</p>
+<h2 id="3-criar-atividades">3 - Criar Atividades</h2>
+<h3 id="31-breve-descricao">3.1 - Breve descrição</h3>
+<p>O caso de uso “Criar Turmas” tem como objetivo dar ao professor da matéria de Requisitos de Software a capacidade de criar turmas e colocar informações dos alunos cadastrados para posteriormente a criação de equipes e organização dos dados relacionados a essa turma durante a matéria.</p>
+<h3 id="32-atores">3.2 - Atores</h3>
+<p>3.2.1 - O professor deseja criar atividades.</p>
+<h3 id="33-fluxo-basicofb">3.3 - Fluxo Básico(FB)</h3>
+<p>3.3.1- O professor faz login no sistema.</p>
+<p>3.3.2- O sistema exibe o painel principal do professor, com opções disponíveis.</p>
+<p>3.3.3- O professor seleciona a opção de criar nova atividade.</p>
+<p>3.3.4- O sistema exibe um formulário vazio para preencher os detalhes da atividade.</p>
+<p>3.3.5- O professor preenche o campo "Descrição" com informações sobre a atividade.</p>
+<p>3.3.6- Após preencher todos os campos necessários, o professor confirma a criação da atividade.</p>
+<p>3.3.7- O sistema valida as informações inseridas pelo professor, verificando se todos os campos estão preenchidos corretamente.</p>
+<p>3.3.8- O sistema salva as informações da atividade em um banco de dados ou sistema de armazenamento.</p>
+<p>3.3.9- O sistema exibe uma mensagem de confirmação informando que a atividade foi criada com sucesso.</p>
+<p>3.3.10- O professor pode optar por criar mais atividades ou realizar outras ações disponíveis no sistema.</p>
+<p>3.3.11- O fluxo de eventos é encerrado.</p>
+<h3 id="34-fluxo-alternativofa">3.4 - Fluxo Alternativo(FA)</h3>
+<p>3.4.1- Após preencher todos os campos necessários, o professor confirma a criação da atividade.</p>
+<p>3.4.2- O professor pode alterar algumas informações posteriormente.</p>
+<p>3.4.3- O professor aperta na função de editar.</p>
+<p>3.4.4- O professor altera as informações da atividade necessárias.</p>
+<p>3.4.5- O professor aperta em salvar as alterações.</p>
+<p>3.4.6- O sistema valida novamente as informações inseridas pelo professor.</p>
+<p>3.4.7- O sistema salva as informações da atividade em um banco de dados ou sistema de armazenamento.</p>
+<p>3.4.8- O fluxo normal continua a partir do passo em que o professor pode optar por criar mais atividades ou realizar outras ações disponíveis no sistema.</p>
+<h3 id="35-fluxo-de-excecaofe">3.5 - Fluxo de Exceção(FE)</h3>
+<p>3.5.1- Após preencher todos os campos necessários, o professor confirma a criação da atividade.</p>
+<p>3.5.2- O sistema valida as informações inseridas pelo professor, mas identifica que um dos campos obrigatórios não foi preenchido.</p>
+<p>3.5.3- O sistema não permite a criação de atividade se todos os campos forem preenchidos.</p>
+<p>3.5.4- O professor revisa o formulário e preenche o campo obrigatório que foi deixado em branco.</p>
+<p>3.5.5- O professor confirma novamente a criação da atividade.</p>
+<p>3.5.6- O sistema valida novamente as informações inseridas pelo professor e, dessa vez, todos os campos obrigatórios estão preenchidos corretamente.</p>
+<p>3.5.7- O sistema salva as informações da atividade em um banco de dados ou sistema de armazenamento.</p>
+<p>3.5.8- O fluxo normal continua a partir do passo em que o professor pode optar por criar mais atividades ou realizar outras ações disponíveis no sistema.</p>
+<h3 id="36-condicoes-previas">3.6 - Condições Prévias</h3>
+<p>3.6.1 - Professor possuir o login autenticado como administrador.</p>
+<h3 id="37-pos-condicoes">3.7 - Pós-condições</h3>
+<p>3.7.1 -O sistema deve ser capaz de armazenar as informações das atividades, seja em um banco de dados ou outro sistema de armazenamento.</p>
+<p>3.7.2- O sistema permite que o professor possa editar ou remover atividades posteriormente, se necessário.</p>
+<h3 id="38-ponto-de-extensao">3.8 - Ponto de Extensão</h3>
+<p>3.8.1- Definir Critérios de Avaliação para a Atividade.</p>
+<p>3.8.2- Associar Materiais Didáticos à Atividade.</p>
+<h3 id="39-requisitos-especiais">3.9 - Requisitos Especiais</h3>
+<p>3.9.1- Requisitos de usabilidade.</p>
+<p>3.9.2- Requisitos de segurança.</p>
+<p>3.9.3- Requisitos de acessibilidade.</p>
+<h2 id="historico-de-revisao">Histórico de revisão</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Data</th>
+<th align="center">Versão</th>
+<th align="center">Descrição</th>
+<th align="center">Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">13/07/2023</td>
+<td align="center">1.0</td>
+<td align="center">Criação dos Casos de Uso</td>
+<td align="center">Felipe Nunes</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
